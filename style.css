@@ -1,0 +1,25 @@
+html {
+    /* Good practice to reset default browser spacing */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* <-- THE KEY CHANGE IS HERE */
+    margin: 0; /* Remove default body margin */
+    font-family: sans-serif;
+}
+
+main {
+    flex-grow: 1; /* This makes the main content area expand and push the footer down */
+}
+
+/* Your other styles for header, footer, etc. can remain the same */
+footer {
+    background-color: #333; /* Example from your image */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
